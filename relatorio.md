@@ -11,9 +11,19 @@ Cada grupo deve entregar um relatorio (*via classroom*) com 4 elementos;
 
 ## 1. Introdução
 
-*   **Objetivo do Projeto:** Descreva brevemente o objetivo principal do projeto, que foi desenvolver um cliente e um servidor para transferência de arquivos utilizando o protocolo FTCP, conforme especificado.
-*   **Motivação:** (Opcional) Comente brevemente sobre a importância de entender protocolos de rede e a diferença entre TCP e UDP no contexto da transferência de arquivos.
-*   **Estrutura do Relatório:** Apresente um resumo das seções que compõem este relatório.
+*   **Objetivo do Projeto:** O objetivo principal deste projeto é o desenvolvimento de um servidor e um cliente de transferência de arquivos que implementam um protocolo personalizado denominado FTCP (File Transfer Control Protocol). Esta implementação demonstra o uso dos protocolos de transporte TCP e UDP, com a negociação inicial ocorrendo via UDP e a subsequente transferência de dados utilizando TCP, conforme especificado nos requisitos do projeto
+
+*   **Motivação:** Este projeto visa solidificar o conhecimento sobre as diferenças cruciais entre TCP (orientado à conexão, confiável) e UDP (não orientado à conexão, não confiável) no contexto da transferência de arquivos. Ao implementar um protocolo que utiliza ambos, podemos analisar suas características distintas e as implicações de suas escolhas para a confiabilidade, ordem e desempenho da transferência de dados.
+
+*   **Estrutura do Relatório:** Este relatório está estruturado em quatro seções principais. 
+
+    * **Seção 1**: apresenta esta introdução, mostrando o objetivo e a motivação do projeto. 
+    
+    * **Seção 2**: descreve a implementação do servidor e do cliente, incluindo os arquivos de configuração e de teste utilizados. 
+    
+    * **Seção 3**: detalha a análise do protocolo FTCP em ação, utilizando capturas de tela do Wireshark para ilustrar a troca de mensagens nas camadas de transporte e a negociação inicial via UDP. 
+    
+    * **Seção 4**: discute os desafios encontrados, as decisões de projeto tomadas e possíveis melhorias futuras para o protocolo e sua implementação.
 
 ## 2. Descrição da Implementação
 
